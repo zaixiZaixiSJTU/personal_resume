@@ -1,0 +1,76 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+\documentclass{resume}
+\usepackage{xeCJK}
+\setCJKmainfont[
+  BoldFont = FandolSong-Bold.otf,
+  ItalicFont = FandolKai-Regular.otf,
+  SmallCapsFont = FandolSong-Regular.otf
+]{FandolSong-Regular.otf}
+\setCJKsansfont[BoldFont = FandolHei-Bold.otf]{FandolHei-Regular.otf}
+\setCJKmonofont{FandolFang-Regular.otf}
+\usepackage{linespacing_fix}
+
+\setlist[itemize]{topsep=0.15em, leftmargin=1.2pc, itemsep=0.05em}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\name{陈磊}
+\basicInfo{
+  \email{Larry-Cl@sjtu.edu.cn} \quad|\quad
+  \phone{17712051921} \quad|\quad
+  \github[zaixiZaixiSJTU]{https://github.com/zaixiZaixiSJTU}}
+
+\section{\faGraduationCap\ 教育背景}
+\datedsubsection{\textbf{上海交通大学\ 机械动力类}}{2024级，预计 2028 年毕业}
+\role{相关课程: C++ 程序设计、数据结构 \quad|\quad CET-6: 488}{}
+
+\section{\faUsers\ 项目经历}
+
+\datedsubsection{\textbf{SJMCL - Minecraft 启动器开发与维护}}{2025 -- 至今}
+\role{TypeScript (Next.js), Chakra UI, Tauri v2}{开源贡献者}
+参与跨平台 Minecraft 启动器的内容发现、系统集成与错误反馈功能开发。
+\begin{itemize}
+  \item 参与 Discover 页开发并加入社区新闻源（PR \#2031）；实现 \texttt{.mrpack} 文件关联导入（PR \#1824）
+  \item 完善微软登录 XSTS 错误提示（PR \#1571），并为扩展内容增加 Markdown 表格渲染适配（PR \#1649）
+\end{itemize}
+
+\datedsubsection{\textbf{astrbot\_plugin\_autoissue - 聊天记录转 GitHub Issue}}{2026}
+\role{Python, AstrBot, LLM, GitHub API}{个人开源项目}
+将群聊讨论结构化为可跟踪的 GitHub Issue，减少人工复制与归纳。
+\begin{itemize}
+  \item 解析引用和多层合并转发消息，经 LLM 生成标题与正文，创建 Issue 后返回链接
+  \item 支持按群绑定仓库与管理员命令；从目标仓库 README 构建知识缓存，为提单提供项目上下文
+\end{itemize}
+
+\datedsubsection{\textbf{MindWolf - AI 狼人杀对战原型}}{2026}
+\role{Python, FastAPI, WebSocket, React, TypeScript}{个人项目}
+面向 12 人对局的 LLM 智能体实验系统，支持按玩家配置模型。
+\begin{itemize}
+  \item 维护玩家角色信息与信念更新逻辑，设计 8 类欺骗策略提示；通过 WebSocket 向 React 观战前端推送对局事件
+\end{itemize}
+
+\datedsubsection{\textbf{Minecraft: Biome Rivals - 群系卡牌对战原型}}{2026}
+\role{Unity 6 (C\#), Nakama (TypeScript), JSON Schema}{个人项目}
+Unity 客户端、服务端权威规则和共享协议组成的可验证游戏原型。
+\begin{itemize}
+  \item 服务端结算回合、部署与战斗并输出事件/快照；构建离线 Demo、规则测试与 Unity EditMode 验证流程
+  \item 以版本化 JSON Schema 约束共享协议，按玩家投影私有状态；编写重连与双客户端联机验收脚本
+\end{itemize}
+
+\section{\faCogs\ IT 技能}
+\begin{itemize}[parsep=0.3ex]
+  \item 语言: Python, TypeScript, JavaScript, Rust, C\# \quad|\quad 后端: FastAPI, asyncio, WebSocket, Nakama
+  \item 前端/客户端: React, Next.js, Tailwind CSS, Chakra UI, Unity 6, Tauri v2
+  \item AI/工程: LLM 接入与结构化输出, Git, GitHub Actions, JSON Schema, 自动化测试
+\end{itemize}
+
+\section{\faHeartO\ 获奖及其他}
+\datedline{致远奖学金 \quad|\quad “交言”校园建设项目一等奖 \quad|\quad SJTU Minecraft 社成员}{在校期间}
+\vspace{-0.3ex}
+\begin{itemize}[parsep=0.3ex]
+  \item 中英文技术文档读写能力 \quad|\quad 关注 AI 应用、后端系统与开源协作
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,67 @@
+% !TEX program = xelatex
+\documentclass{resume}
+
+\setlist[itemize]{topsep=0.15em, leftmargin=1.2pc, itemsep=0.05em}
+
+\begin{document}
+\pagenumbering{gobble}
+
+\name{Lei Chen}
+\basicInfo{
+  \email{Larry-Cl@sjtu.edu.cn} \quad|\quad
+  \phone{+86 177-1205-1921} \quad|\quad
+  \github[zaixiZaixiSJTU]{https://github.com/zaixiZaixiSJTU}}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{Expected 2028}
+\textit{B.Eng.} Mechanical and Power Engineering \hfill Class of 2024\\
+\textit{Relevant Coursework:} C++ Programming, Data Structures \quad|\quad CET-6: 488
+
+\section{\faUsers\ Projects}
+
+\datedsubsection{\textbf{SJMCL - Minecraft Launcher Development}}{2025 -- Present}
+\role{TypeScript (Next.js), Chakra UI, Tauri v2}{Open-source Contributor}
+Contribute to content discovery, desktop integration, and error handling in a cross-platform Minecraft launcher.
+\begin{itemize}
+  \item Added community news sources to Discover (PR \#2031) and \texttt{.mrpack} file association for quick modpack import (PR \#1824)
+  \item Improved Microsoft sign-in XSTS error messages (PR \#1571) and Markdown table rendering for extensions (PR \#1649)
+\end{itemize}
+
+\datedsubsection{\textbf{astrbot\_plugin\_autoissue - Chat-to-GitHub Issues}}{2026}
+\role{Python, AstrBot, LLMs, GitHub API}{Personal Open-source Project}
+Turn group-chat discussions into structured GitHub Issues with an automated capture-to-link workflow.
+\begin{itemize}
+  \item Parse quoted and nested forwarded messages; use an LLM to draft titles and bodies, create Issues, and return links
+  \item Support persistent per-group repository binding and admin commands; cache repository README context for issue drafting
+\end{itemize}
+
+\datedsubsection{\textbf{MindWolf - AI Werewolf Game Prototype}}{2026}
+\role{Python, FastAPI, WebSocket, React, TypeScript}{Personal Project}
+An LLM-agent experiment for 12-player games with per-player model configuration.
+\begin{itemize}
+  \item Built player belief updates and eight deception-strategy prompts; stream game events to a React spectator UI over WebSocket
+\end{itemize}
+
+\datedsubsection{\textbf{Minecraft: Biome Rivals - Card Game Prototype}}{2026}
+\role{Unity 6 (C\#), Nakama (TypeScript), JSON Schema}{Personal Project}
+A testable Unity client with server-authoritative rules and a shared protocol.
+\begin{itemize}
+  \item Resolve turns, deployment, and combat on the server; built an offline demo, rules tests, and Unity EditMode validation
+  \item Versioned JSON Schema contracts and private player-state projections; added reconnect and dual-client validation scripts
+\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.3ex]
+  \item Languages: Python, TypeScript, JavaScript, Rust, C\# \quad|\quad Backend: FastAPI, asyncio, WebSocket, Nakama
+  \item Frontend/Client: React, Next.js, Tailwind CSS, Chakra UI, Unity 6, Tauri v2
+  \item AI/Engineering: LLM integration and structured output, Git, GitHub Actions, JSON Schema, automated tests
+\end{itemize}
+
+\section{\faHeartO\ Honors \& Activities}
+\datedline{Zhiyuan Scholarship \quad|\quad First Prize, Jiaoyan Campus Project \quad|\quad SJTU Minecraft Club}{}
+\vspace{-0.3ex}
+\begin{itemize}[parsep=0.3ex]
+  \item Technical writing in Chinese and English \quad|\quad Interests: AI applications, backend systems, open source
+\end{itemize}
+
+\end{document}

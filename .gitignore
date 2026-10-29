@@ -1,0 +1,17 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# Local font copies are not needed: TeX Live provides the build fonts.
+/fonts/
+
+# Unused local font presets retained only for older local builds.
+/zh_CN-Adobefonts_*.sty
+/NotoSansSC_external.sty
+/NotoSerifCJKsc_external.sty
